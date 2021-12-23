@@ -9,16 +9,16 @@ public class MegaBytesConverter {
         if (kiloBytes < 0) {
             System.out.println("Invalid Value");
         } else {
-            long megaBytes = kiloBytes / 1024;
-            long remainder = Math.round(kiloBytes % 1024);
+            int megaBytes = kiloBytes / 1024;
+            int remainder = (kiloBytes % 1024);
             System.out.println(kiloBytes + " KB = " + megaBytes + " MB " + "and " + remainder + " KB");
         }
     }
-}
 
     public static void main(String[] args) {
-        MegaBytesConverter.printMegaBytesAndKiloBytes(2050);
+        MegaBytesConverter.printMegaBytesAndKiloBytes(6000);
     }
+
 }
 
 
