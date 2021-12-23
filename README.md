@@ -9,8 +9,8 @@ public class MegaBytesConverter {
         if (kiloBytes < 0) {
             System.out.println("Invalid Value");
         } else {
-            int megaBytes = kiloBytes / 1024;
-            int remainder = (kiloBytes % 1024);
+            int megaBytes = kiloBytes / 1024;   // as you can see I removed the type "long" and replaced 
+            int remainder = (kiloBytes % 1024); // with appropriate type "int", also removed the Math.round method() and also the brackets. 
             System.out.println(kiloBytes + " KB = " + megaBytes + " MB " + "and " + remainder + " KB");
         }
     }
