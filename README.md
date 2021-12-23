@@ -9,17 +9,20 @@ public class MegaBytesConverter {
         if (kiloBytes < 0) {
             System.out.println("Invalid Value");
         } else {
-            long megaBytes = (int) (kiloBytes * 0.0009765625);
-            long remainder = Math.round(kiloBytes * 0.0009765625 % megaBytes);
+            long megaBytes = kiloBytes / 1024;
+            long remainder = Math.round(kiloBytes % 1024);
             System.out.println(kiloBytes + " KB = " + megaBytes + " MB " + "and " + remainder + " KB");
         }
     }
+}
 
     public static void main(String[] args) {
         MegaBytesConverter.printMegaBytesAndKiloBytes(2050);
     }
 }
 
-<img width="899" alt="Screenshot 2021-12-23 at 3 17 04 PM" src="https://user-images.githubusercontent.com/96517341/147259793-eb21839b-94dc-44d1-bd60-ab66200968c7.png">
 
-<img width="793" alt="Screenshot 2021-12-23 at 3 19 45 PM" src="https://user-images.githubusercontent.com/96517341/147260625-1330132b-f34c-4b66-a95b-832a66f06333.png">
+<img width="1280" alt="Screenshot 2021-12-23 at 3 35 13 PM" src="https://user-images.githubusercontent.com/96517341/147262233-399c203e-b76b-49e3-92cf-dd6fdef22f86.png">
+<img width="1279" alt="Screenshot 2021-12-23 at 3 37 08 PM" src="https://user-images.githubusercontent.com/96517341/147262250-b18415a3-7607-4a4b-be77-e43f7988db04.png">
+
+
