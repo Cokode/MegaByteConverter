@@ -14,7 +14,6 @@ public class MegaBytesConverter {
             System.out.println(kiloBytes + " KB = " + megaBytes + " MB " + "and " + remainder + " KB");
         }
     }
-}
 
     public static void main(String[] args) {
         MegaBytesConverter.printMegaBytesAndKiloBytes(2050);
